@@ -17,7 +17,7 @@ urls = ["https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/",
 
 function FixProfileSrc() {
         small_profile = $('img.profilePic.img').clone();
-        small_profile_link = small_profile.attr('src');
+        small_profile_link = $(small_profile).attr('src');
 
         random_element = Math.floor((Math.random() * urls.length) + 1);
         random_start_url = urls[random_element];
